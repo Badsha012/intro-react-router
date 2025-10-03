@@ -9,10 +9,22 @@ const router = createBrowserRouter([
     path: "/",
     element: <div>Hello World</div>
   },
+  {
+    path:'/about',
+    element:<div>Wlecome react router</div>
+  },
+  {
+    path:'/home',
+    element:<div>My Home page</div>
+  },
+  {
+    path:'/app',
+    Component:App
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-      <RouterProvider router={router} />,
+      <RouterProvider router={router} />
   </StrictMode>,
 )
